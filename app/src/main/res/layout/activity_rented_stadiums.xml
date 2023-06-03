@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE39C"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="131dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/logo" />
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="430dp"
+        android:layout_alignEnd="@+id/imagesRV"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="-259dp"
+        android:layout_toEndOf="@+id/imagesRV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        android:layout_below="@+id/imageViewLogo">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/AddStadium"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ListView"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#A62929"
+        android:text="@string/AddStadium" />
+
+    <Button
+        android:id="@+id/ViewAll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagesRV"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#A62929"
+        android:text="@string/ViewAll" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesRV"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AddStadium"
+
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-8dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignRight="@id/ListView"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#A62929"
+        android:text="@string/logout" />
+
+</RelativeLayout>
+
+
+

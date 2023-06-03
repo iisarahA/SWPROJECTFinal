@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AddItem</string>
+    <string name="StadiumName">Stadium Name</string>
+    <string name="Sporttype">Sport type</string>
+    <string name="Location">Location</string>
+    <string name="Price">Price (per hour)</string>
+    <string name="AddStadium">Add Stadium</string>
+    <string name="ViewAll">View All</string>
+    <string name="Enterimagename">Enter image name</string>
+    <string name="logout">Log out</string>
+</resources>

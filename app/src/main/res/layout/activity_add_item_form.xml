@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF1CF"
+    tools:context=".AddItemForm">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="404dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="7dp"
+        android:adjustViewBounds="true"
+        android:background="#E4E4E4"
+        android:onClick="chooseImages"
+
+        android:scaleType="center"
+        app:srcCompat="@drawable/baseline_image_24" />
+
+    <EditText
+        android:id="@+id/imageNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/Enterimagename"
+        android:maxLength="25"
+        android:inputType="textPersonName"
+
+        />
+
+    <EditText
+        android:id="@+id/Sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/StadiumName"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/image"/>
+
+    <EditText
+        android:id="@+id/SportType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/Sporttype"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/Sname"
+    />
+
+    <EditText
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/Location"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/SportType"
+         />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="@string/Price"
+        android:inputType="numberSigned"
+        android:layout_below="@+id/loc"
+      />
+
+    <Button
+        android:id="@+id/btn_Add"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#A62929"
+        android:text="Add" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignRight="@id/ListView"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#A62929"
+        android:text="@string/logout" />
+
+</RelativeLayout>
